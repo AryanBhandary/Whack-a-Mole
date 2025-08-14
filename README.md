@@ -1,12 +1,25 @@
-# React + Vite
+Whack-a-Mole 🐹
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**Description:**  
+A modern take on the classic Whack-a-Mole game. Moles pop up randomly on a 6x6 grid. Your goal is to click the mole before it disappears. The game features:
 
-Currently, two official plugins are available:
+- Random mole appearances
+- Funny background audio when the game heats up
+- Crying and laughing video overlays when you hit a mole or when time runs out
+- Start and restart buttons in a fixed position
+- Smooth, visually appealing grid
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+**Tech Highlights:**
 
-## Expanding the ESLint configuration
+- React `useState`, `useEffect`, and `useRef` hooks
+- Audio and video integration for dynamic feedback
+- CSS overlays and animations for engaging UX
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+**How to play:**
+
+1. Click "Start Game".
+2. Click on moles as they appear.
+3. Watch fun video reactions based on game events.
+4. Click "Restart Game" to play again.
+
+---
