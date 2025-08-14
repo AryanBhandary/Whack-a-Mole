@@ -1,0 +1,142 @@
+:root {
+  --bg-color: #121212;
+  --cell-color: #1f1f1f;
+  --hole-color: #000;
+  --text-color: #fff;
+  --accent-color: #ff6b81;
+  --button-bg: #ff6b81;
+  --button-hover: #ff4757;
+}
+
+body, html, #root {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+.App {
+  text-align: center;
+  padding: 20px;
+}
+
+h1 {
+  color: var(--accent-color);
+  margin-bottom: 10px;
+}
+
+.score {
+  margin: 10px 0;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(5, 80px);
+  grid-gap: 10px;
+  justify-content: center;
+  margin: 20px auto;
+}
+
+.cell {
+  width: 80px;
+  height: 80px;
+  background-color: var(--cell-color);
+  border-radius: 10px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Hole effect */
+.cell::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 50px;
+  height: 20px;
+  background-color: var(--hole-color);
+  border-radius: 50%;
+  z-index: 2;
+  box-shadow: inset 0 5px 10px rgba(0,0,0,0.7);
+}
+
+.mole-container {
+  position: absolute;
+  bottom: -50px;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  z-index: 3;
+  cursor: pointer;
+  transition: bottom 0.15s;
+}
+
+.mole-container.active {
+  bottom: 5px;
+  animation: bounce 0.3s infinite 0.1s;
+}
+
+.mole-image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  pointer-events: none;
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-5px); }
+}
+
+.restart-btn {
+  margin: 20px 10px 0 10px;
+  padding: 12px 25px;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  background-color: var(--button-bg);
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.restart-btn:hover {
+  background-color: var(--button-hover);
+  transform: scale(1.05);
+}
+
+.button-container {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 5;  /* above grid but below overlay video */
+}
+
+
+.overlay-video {
+  position: absolute;
+  top: -15%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  pointer-events: none;
+  z-index: 10;
+}
+
+.overlay-video video {
+  width: 480px;      /* uniform width */
+  height: 320px;     /* uniform height */
+  object-fit: cover; /* cover the box without stretching */
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.5);
+  opacity: 0.95;
+}
