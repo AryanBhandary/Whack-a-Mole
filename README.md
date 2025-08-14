@@ -1,25 +1,37 @@
-Whack-a-Mole 🐹
+## 🐹 Whack-a-Mole  
 
-**Description:**  
-A modern take on the classic Whack-a-Mole game. Moles pop up randomly on a 6x6 grid. Your goal is to click the mole before it disappears. The game features:
+**_Interactive Whack-a-Mole Game with Audio and Video Effects_**  
 
-- Random mole appearances
-- Funny background audio when the game heats up
-- Crying and laughing video overlays when you hit a mole or when time runs out
-- Start and restart buttons in a fixed position
-- Smooth, visually appealing grid
+> 🎯 Click the moles before time runs out! Fun sounds and funny videos make it lively._  
 
-**Tech Highlights:**
+### ✨ Project Overview
 
-- React `useState`, `useEffect`, and `useRef` hooks
-- Audio and video integration for dynamic feedback
-- CSS overlays and animations for engaging UX
+A 6x6 grid Whack-a-Mole game built with React.js. Features: dynamic mole popping, looping background audio, overlay videos on game events, and a fixed button for starting/restarting the game.
 
-**How to play:**
+### 🧠 Project Goals
 
-1. Click "Start Game".
-2. Click on moles as they appear.
-3. Watch fun video reactions based on game events.
-4. Click "Restart Game" to play again.
+- 🐹 Pop moles dynamically on the grid
+- 🎧 Background funny audio and game-event videos 
+- ⏱️ 15-second gameplay with auto-laugh video after timeout 
+- 🖥️ Smooth, responsive, and visually appealing
 
----
+### 💻 Tech Stack
+
+| Layer      | Technology          |
+|------------|-------------------|
+| Frontend   | React.js, CSS      |
+| Audio/Video    | Mp3/Mp4               |
+| Status     | ✅ Completed        |
+
+### 📦 Setup Instructions
+
+```bash
+# Clone the repo
+git clone https://github.com/YourUsername/whack-a-mole.git
+cd whack-a-mole
+
+# Install dependencies
+npm install
+
+# Run locally
+npm start
