@@ -115,7 +115,7 @@ h1 {
   top: 60%;
   left: 50%;
   transform: translate(-50%, -50%);
-  z-index: 5;  /* above grid but below overlay video */
+  z-index: 5;  
 }
 
 
@@ -133,9 +133,9 @@ h1 {
 }
 
 .overlay-video video {
-  width: 480px;      /* uniform width */
-  height: 320px;     /* uniform height */
-  object-fit: cover; /* cover the box without stretching */
+  width: 480px;     
+  height: 320px;     
+  object-fit: cover; 
   border-radius: 12px;
   box-shadow: 0 0 20px rgba(0,0,0,0.5);
   opacity: 0.95;

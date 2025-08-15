@@ -104,7 +104,7 @@ function App() {
       <h1>Whack-a-Mole</h1>
       <p className="score">Time Left: {timeLeft}s</p>
 
-      {/* Fixed button position */}
+      
       <div className="button-container">
         {!gameStarted || gameOver ? (
           <button className="restart-btn" onClick={startGame}>
@@ -113,7 +113,6 @@ function App() {
         ) : null}
       </div>
 
-      {/* Grid always visible */}
       <div className="grid">
         {Array.from({ length: GRID_SIZE * GRID_SIZE }).map((_, index) => (
           <div key={index} className="cell">
