@@ -1,12 +1,37 @@
-# React + Vite
+## 🐹 Whack-a-Mole  
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**_Interactive Whack-a-Mole Game with Audio and Video Effects_**  
 
-Currently, two official plugins are available:
+> 🎯 Click the moles before time runs out! Fun sounds and funny videos make it lively._  
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### ✨ Project Overview
 
-## Expanding the ESLint configuration
+A 6x6 grid Whack-a-Mole game built with React.js. Features: dynamic mole popping, looping background audio, overlay videos on game events, and a fixed button for starting/restarting the game.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### 🧠 Project Goals
+
+- 🐹 Pop moles dynamically on the grid
+- 🎧 Background funny audio and game-event videos 
+- ⏱️ 15-second gameplay with auto-laugh video after timeout 
+- 🖥️ Smooth, responsive, and visually appealing
+
+### 💻 Tech Stack
+
+| Layer      | Technology          |
+|------------|-------------------|
+| Frontend   | React.js, CSS      |
+| Audio/Video    | Mp3/Mp4               |
+| Status     | ✅ Completed        |
+
+### 📦 Setup Instructions
+
+```bash
+# Clone the repo
+git clone https://github.com/YourUsername/whack-a-mole.git
+cd whack-a-mole
+
+# Install dependencies
+npm install
+
+# Run locally
+npm start
