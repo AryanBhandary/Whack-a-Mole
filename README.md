@@ -27,7 +27,7 @@ A 6x6 grid Whack-a-Mole game built with React.js. Features: dynamic mole popping
 
 ```bash
 # Clone the repo
-git clone https://github.com/YourUsername/whack-a-mole.git
+git clone https://github.com/aryanbhandary/whack-a-mole.git
 cd whack-a-mole
 
 # Install dependencies
